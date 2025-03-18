@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Basics</title>
+  <link rel="stylesheet" href="html.css">
+  <script>
+    function toggleExample(id) {
+      const example = document.getElementById(id);
+      example.classList.toggle('hidden');
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="html.html">HTML Basics</a></li>
+        <li><a href="css.html">CSS Basics</a></li>
+        <li><a href="practice.html">Practice</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h1>HTML Basics</h1>
+      <p>HTML (HyperText Markup Language) is the foundation of the web. By learning HTML, you gain the power to structure and build web pages that are the backbone of the digital world.</p>
+      <p class="highlight">Let's dive into HTML and learn how to create stunning web pages!</p>
+    </section>
+
+    <section class="content">
+      <h2>What is HTML?</h2>
+      <p>HTML stands for <strong>HyperText Markup Language</strong>. It uses a system of tags to structure the content of a webpage. These tags guide browsers on how to display text, images, links, and other elements.</p>
+      
+      <h2>Basic HTML Structure</h2>
+      <p>Every HTML document starts with a basic structure. Click below to see the example:</p>
+      <button class="toggle-button" onclick="toggleExample('example-1')">Show/Hide Example</button>
+      <pre id="example-1" class="hidden">
+        <code>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My First Webpage</title>
+  </head>
+  <body>
+    <h1>Welcome to HTML</h1>
+    <p>This is a paragraph of text.</p>
+  </body>
+</html>
+        </code>
+      </pre>
+
+      <h2>Common HTML Tags</h2>
+      <div class="tag-grid">
+        <div class="tag-card">
+          <h3>&lt;h1&gt; - &lt;h6&gt;</h3>
+          <p>Headings for titles, with &lt;h1&gt; being the largest and &lt;h6&gt; the smallest.</p>
+        </div>
+        <div class="tag-card">
+          <h3>&lt;p&gt;</h3>
+          <p>Defines paragraphs of text.</p>
+        </div>
+        <div class="tag-card">
+          <h3>&lt;a&gt;</h3>
+          <p>Creates hyperlinks to other pages or websites.</p>
+        </div>
+        <div class="tag-card">
+          <h3>&lt;img&gt;</h3>
+          <p>Embeds images on a page.</p>
+        </div>
+        <div class="tag-card">
+          <h3>&lt;ul&gt; &amp; &lt;ol&gt;</h3>
+          <p>Unordered (bulleted) and ordered (numbered) lists.</p>
+        </div>
+      </div>
+
+
+    </section>
+
+    <section class="summary">
+      <h2>Summary</h2>
+      <p>HTML is the backbone of the web. With its basic tags and structure, you can create powerful and functional web pages. Keep practicing and explore new tags to expand your skills!</p>
+    </section>
+
+    <section class="cta">
+      <p>Excited to style your HTML? Visit the <a href="css.html">CSS Basics</a> page and start designing!</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Learn HTML & CSS Basics. All rights reserved.</p>
+  </footer>
+</body>
+</html>
